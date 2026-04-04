@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/", "destination": "/about-desktop-2.html" }]
+}
