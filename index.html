@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – SwifterX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="logo">
+      <img src="assets/Group%203350.png" alt="SwifterX" class="logo-img" srcset="assets/Group%203350.png 1x, assets/Group%203350@2x.png 2x" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+      <span class="logo-fallback" style="display:none;"><span class="logo-icon">S</span><span class="logo-text">SWIFTER</span></span>
+    </a>
+    <nav class="header-nav" aria-label="Main">
+      <a href="/privacy.html" class="header-nav-link">Privacy</a>
+      <a href="/support.html" class="header-nav-link">Support</a>
+      <a href="/deeplink.html" class="header-nav-link">Open app</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="hero-title">Empowerment through opportunity</h1>
+    <p class="hero-subtitle">Discover, connect, and engage with top-rated, affordable service providers in your area effortlessly.</p>
+    <div class="hero-actions" role="group" aria-label="Choose audience">
+      <a id="hero-customer" class="btn btn-outline hero-role-btn active" href="#why-choose" data-activate-role="customer">Customer</a>
+      <a id="hero-provider" class="btn btn-outline hero-role-btn" href="#why-choose" data-activate-role="provider">Provider</a>
+    </div>
+  </section>
+
+  <section class="section who-we-are">
+    <div class="section-inner split">
+      <div class="who-image">
+        <img src="assets/Frame%201618868192.png" alt="Who we are" class="who-image-img" />
+      </div>
+      <div class="who-content">
+        <p class="who-kicker">About us</p>
+        <h2 class="section-title">Who are we?</h2>
+        <p class="section-subtitle">SwifterX: Revolutionizing Service Access</p>
+        <div class="who-body">
+          <p>SwifterX is a marketplace that brings customers and local service providers together in one place. We focus on clarity, fair pricing, and real reviews so you can book work you actually trust.</p>
+          <p>From quick fixes to bigger projects, our goal is simple: less friction, more reliable outcomes—for everyone who uses the platform.</p>
+        </div>
+        <p class="who-welcome">Welcome to convenience redefined</p>
+        <a class="btn btn-dark" href="#why-choose">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-cards-section" id="why-choose" aria-labelledby="why-heading">
+    <div class="why-cards-head">
+      <div>
+        <h2 id="why-heading" class="section-title">Why choose SwifterX?</h2>
+        <p class="why-role-blurb why-role-blurb-customer">Book trusted help fast: compare providers, see clear pricing, and manage everything in one place.</p>
+        <p class="why-role-blurb why-role-blurb-provider is-hidden" aria-hidden="true">Grow on your terms: reach new clients, set your rates, and run your schedule with tools built for providers.</p>
+      </div>
+      <div class="role-toggle" role="group" aria-label="Show benefits for">
+        <button type="button" id="toggle-customer" data-role="customer" aria-pressed="true">Customer</button>
+        <button type="button" id="toggle-provider" data-role="provider" aria-pressed="false">Provider</button>
+      </div>
+    </div>
+    <div class="why-cards-grid">
+      <article class="why-card">
+        <div class="why-card-icon-wrap why-card-icon-wrap--extensive" aria-hidden="true">
+          <img class="why-card-icon why-card-icon--extensive-base" src="assets/Vector.png" alt="" width="48" height="48" />
+          <img class="why-card-icon why-card-icon--extensive-front" src="assets/Vector-1.png" alt="" width="48" height="48" />
+        </div>
+        <h3 class="why-card-title">
+          <span class="why-card-title-customer">Extensive Network</span>
+          <span class="why-card-title-provider is-hidden" aria-hidden="true">Wider reach</span>
+        </h3>
+        <p class="why-card-desc why-card-desc-customer">Home repairs to drivers, find services easily.</p>
+        <p class="why-card-desc why-card-desc-provider is-hidden">Tap into demand across your area and fill your calendar with jobs that fit your skills.</p>
+      </article>
+      <article class="why-card">
+        <div class="why-card-icon-wrap">
+          <img class="why-card-icon" src="assets/check-circle.png" alt="" width="48" height="48" />
+        </div>
+        <h3 class="why-card-title">
+          <span class="why-card-title-customer">Verified Providers</span>
+          <span class="why-card-title-provider is-hidden" aria-hidden="true">Verified customers</span>
+        </h3>
+        <p class="why-card-desc why-card-desc-customer">Trust vetted professionals and hobbyists.</p>
+        <p class="why-card-desc why-card-desc-provider is-hidden">Connect with customers who are verified so you can work with greater peace of mind.</p>
+      </article>
+      <article class="why-card">
+        <div class="why-card-icon-wrap">
+          <img class="why-card-icon" src="assets/Group.png" alt="" width="48" height="48" />
+        </div>
+        <h3 class="why-card-title">
+          <span class="why-card-title-customer">User-Friendly</span>
+          <span class="why-card-title-provider is-hidden" aria-hidden="true">Built for your workflow</span>
+        </h3>
+        <p class="why-card-desc why-card-desc-customer">Intuitive app and website for all.</p>
+        <p class="why-card-desc why-card-desc-provider is-hidden">Manage requests, messages, and availability without fighting the interface.</p>
+      </article>
+      <article class="why-card">
+        <div class="why-card-icon-wrap">
+          <img class="why-card-icon" src="assets/money%20(1)%201.png" alt="" width="48" height="48" />
+        </div>
+        <h3 class="why-card-title">
+          <span class="why-card-title-customer">Transparent Pricing</span>
+          <span class="why-card-title-provider is-hidden" aria-hidden="true">You set the rates</span>
+        </h3>
+        <p class="why-card-desc why-card-desc-customer">Compare prices and reviews, no hidden costs.</p>
+        <p class="why-card-desc why-card-desc-provider is-hidden">Publish rates that reflect your value and help the right customers choose you.</p>
+      </article>
+      <article class="why-card why-card--instant">
+        <div class="why-card-icon-wrap why-card-icon-wrap--layers" aria-hidden="true">
+          <img class="why-card-icon why-card-icon--layer-base" src="assets/Vector-2.png" alt="" width="48" height="48" />
+          <img class="why-card-icon why-card-icon--layer-over" src="assets/Vector-3.png" alt="" width="48" height="48" />
+        </div>
+        <h3 class="why-card-title">
+          <span class="why-card-title-customer">Instant Booking</span>
+          <span class="why-card-title-provider is-hidden" aria-hidden="true">Live scheduling</span>
+        </h3>
+        <p class="why-card-desc why-card-desc-customer">Schedule instantly with real-time updates.</p>
+        <p class="why-card-desc why-card-desc-provider is-hidden">See new requests and changes as they happen so your day stays organized.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section services-section">
+    <h2 class="section-title">Our Services</h2>
+    <p class="services-lead">Explore categories customers book every day—from urgent fixes to planned upgrades. Find pros or list your own services on SwifterX.</p>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-card-image service-card-image--plumber" aria-label="Plumber / repairs"></div>
+        <h3 class="service-card-title">Plumbing &amp; home repairs</h3>
+        <p class="service-card-text">Leaks, clogs, water heaters, and installs handled by experienced plumbers in your area.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-card-image service-card-image--handyman" aria-label="Handyman / tools"></div>
+        <h3 class="service-card-title">Handyman &amp; general maintenance</h3>
+        <p class="service-card-text">Assembly, patching, mounting, and small repairs to keep your space in great shape.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-card-image service-card-image--construction" aria-label="Construction"></div>
+        <h3 class="service-card-title">Construction &amp; larger projects</h3>
+        <p class="service-card-text">Renovations, structural work, and bigger jobs with providers who scope and deliver clearly.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section explore-section">
+    <h2 class="explore-title">Explore with us</h2>
+    <p class="explore-subtitle">Browse providers, compare options, and take the next step—whether you are hiring help or growing your business on SwifterX.</p>
+    <a class="btn btn-outline" href="/support.html">Get started</a>
+  </section>
+
+  <section class="section faq-section">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span>How do I book a service on SwifterX?</span>
+          <span class="faq-icon" aria-hidden="true">↓</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Create an account, search for the service you need, compare providers and reviews, then send a request or message to book a time that works for you.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span>How are providers verified?</span>
+          <span class="faq-icon" aria-hidden="true">↓</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>We use identity and profile checks plus community feedback so customers can hire with more confidence. Details may vary by region and service type.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span>Is pricing shown before I commit?</span>
+          <span class="faq-icon" aria-hidden="true">↓</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Providers can share rates and what is included in their profiles. Always confirm scope and price in writing before work begins.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span>Can I use SwifterX as a service provider?</span>
+          <span class="faq-icon" aria-hidden="true">↓</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Yes. Sign up as a provider, complete onboarding, set your services and availability, and start receiving requests from customers in your area.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span>What if something goes wrong with a job?</span>
+          <span class="faq-icon" aria-hidden="true">↓</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Use in-app messaging and support channels to resolve issues. Keep records of agreements and photos when helpful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="/" class="logo">
+          <img src="assets/Group%203350.png" alt="SwifterX" class="logo-img" srcset="assets/Group%203350.png 1x, assets/Group%203350@2x.png 2x" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+          <span class="logo-fallback" style="display:none;"><span class="logo-icon">S</span><span class="logo-text">SWIFTER</span></span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/" class="footer-nav-link">Home</a>
+          <a href="/privacy.html" class="footer-nav-link">Privacy Policy</a>
+          <a href="/support.html" class="footer-nav-link">Support</a>
+          <a href="/deeplink.html" class="footer-nav-link">Open app</a>
+        </nav>
+        <div class="footer-contact">
+          <a class="footer-mail" href="mailto:swifterxtech@gmail.com">swifterxtech@gmail.com</a>
+          <a
+            class="footer-linkedin"
+            href="https://www.linkedin.com/in/younus-syed-2911702b8/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >SwifterX</a>
+        </div>
+      </div>
+      <p class="footer-copy">© SwifterX. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="about.js"></script>
+</body>
+</html>

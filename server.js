@@ -20,7 +20,18 @@ const mimeTypes = {
 const server = http.createServer((req, res) => {
   // Use pathname only (strip query string and hash), decode URL encoding (e.g. %20 -> space)
   const pathname = req.url.split('?')[0].split('#')[0];
-  const requested = pathname === '/' ? 'about-desktop-2.html' : decodeURIComponent(pathname.replace(/^\//, ''));
+  let requested = pathname === '/' ? 'index.html' : decodeURIComponent(pathname.replace(/^\//, ''));
+
+  if (!path.extname(requested) && !requested.includes('/')) {
+    const htmlTry = `${requested}.html`;
+    const htmlPath = path.resolve(__dirname, htmlTry);
+    try {
+      if (fs.existsSync(htmlPath)) requested = htmlTry;
+    } catch (_) {
+      /* ignore */
+    }
+  }
+
   const filePath = path.resolve(__dirname, requested);
 
   // Ensure we don't serve files outside project directory
@@ -51,7 +62,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
-  console.log(`Open: http://localhost:${PORT}/about-desktop-2.html`);
+  console.log(`Open: http://localhost:${PORT}/`);
 }).on("error", (err) => {
   if (err.code === "EADDRINUSE") {
     console.error(`Port ${PORT} is in use. Stop the other process or use a different port.`);

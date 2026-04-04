@@ -1,3 +1,7 @@
 {
-  "rewrites": [{ "source": "/", "destination": "/about-desktop-2.html" }]
+  "rewrites": [
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/deeplink", "destination": "/deeplink.html" }
+  ]
 }
