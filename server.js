@@ -20,7 +20,18 @@ const mimeTypes = {
 const server = http.createServer((req, res) => {
   // Use pathname only (strip query string and hash), decode URL encoding (e.g. %20 -> space)
   const pathname = req.url.split('?')[0].split('#')[0];
-  const requested = pathname === '/' ? 'index.html' : decodeURIComponent(pathname.replace(/^\//, ''));
+  let requested = pathname === '/' ? 'index.html' : decodeURIComponent(pathname.replace(/^\//, ''));
+
+  if (!path.extname(requested) && !requested.includes('/')) {
+    const htmlTry = `${requested}.html`;
+    const htmlPath = path.resolve(__dirname, htmlTry);
+    try {
+      if (fs.existsSync(htmlPath)) requested = htmlTry;
+    } catch (_) {
+      /* ignore */
+    }
+  }
+
   const filePath = path.resolve(__dirname, requested);
 
   // Ensure we don't serve files outside project directory
